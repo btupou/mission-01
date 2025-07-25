@@ -1,24 +1,10 @@
-/* CSS  REQUIREMENTS
-Flexbox 
-Background Stylisation of <body> or <div> ✅
-Font Stylisation ✅
-Margins  ✅`
-Width & Height ✅
-Animations ✅
-
-*/
-
 * {
-  /* border: 1px dashed orange; */
   box-sizing: border-box;
 }
 
 body {
-  /* border: 1px solid black; */
   font-family: 'Courier New', Courier, monospace;
   margin: 0;
-  /* width: 768px; */
-  /* margin: 0 150 0 150; */
 }
 
 p {
@@ -27,18 +13,8 @@ p {
   margin: 10px 0;
 }
 
-/* .clouds { */
-/* background-image: "./images/clouds.jpg";
-  /* background-size: repeat; */
-/* background-position: center; */
-/* height: 100vh; */
-/* width: 100%; */
-/* background-repeat: repeat; */
-/* } */
-
 .header {
   background-color: #fefefe;
-  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,16 +122,6 @@ fieldset {
     flex-direction: column;
   }
 }
-
-/* 
-@media screen and (max-width:600px) {
-  .navbar {
-    font-family: comic sans ms;
-    font-size: 12px;
-    background-color: lightpink;
-  }
-} */
-
 
 /* ANIMATIONS */
 a {
