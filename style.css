@@ -1,0 +1,184 @@
+/* CSS  REQUIREMENTS
+Flexbox 
+Background Stylisation of <body> or <div> ✅
+Font Stylisation ✅
+Margins  ✅`
+Width & Height ✅
+Animations ✅
+
+*/
+
+* {
+  /* border: 1px dashed orange; */
+  box-sizing: border-box;
+}
+
+body {
+  /* border: 1px solid black; */
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  /* width: 768px; */
+  /* margin: 0 150 0 150; */
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+/* .clouds { */
+/* background-image: "./images/clouds.jpg";
+  /* background-size: repeat; */
+/* background-position: center; */
+/* height: 100vh; */
+/* width: 100%; */
+/* background-repeat: repeat; */
+/* } */
+
+.header {
+  background-color: #fefefe;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 30%;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px;
+}
+
+.navbar-left {
+  flex-basis: 50%;
+  text-align: left;
+  /* padding: 20px; */
+}
+
+.navbar-right {
+  flex-basis: 50%;
+  text-align: right;
+  /* padding: 20px; */
+}
+
+.content {
+  padding: 20px;
+  background-color: #f9f9f9;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  /* height: calc(100vh - 200px); */
+  width: 100%;
+}
+
+.content-left {
+  flex-basis: 50%;
+  text-align: left;
+  /* padding: 20px; */
+}
+
+.content-right {
+  flex-basis: 50%;
+  text-align: right;
+  /* padding: 20px; */
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 18px;
+  /* border: none; */
+  /* optional, for spacing */
+}
+
+form input[type="submit"] {
+  font-size: 18px;
+  width: 100%;
+  /* or use px, e.g., 20px */
+}
+
+.footer {
+  padding: 20px;
+  display: flex;
+  align-items: row;
+  /* text-align: center; */
+  background-color: rgb(243, 213, 218);
+  /* color: black; */
+}
+
+.footer-left {
+  flex-basis: 50%;
+  /* background-color: coral; */
+  /* padding: 20px; */
+}
+
+.footer-right {
+  flex-basis: 50%;
+  /* background-color: lightblue; */
+  border: none;
+  /* padding: 20px; */
+}
+
+fieldset {
+  border: none;
+  font-size: 18px;
+  padding: 0;
+}
+
+@media screen and (max-width:768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+}
+
+/* 
+@media screen and (max-width:600px) {
+  .navbar {
+    font-family: comic sans ms;
+    font-size: 12px;
+    background-color: lightpink;
+  }
+} */
+
+
+/* ANIMATIONS */
+a {
+  width: 100px;
+  height: 100px;
+  /* background-color: forestgreen; */
+  transition: font-size 1s;
+
+  /* delay transitions start */
+  transition-delay: 0s;
+
+  /* play transition slow and beginning and end */
+  /* transition-timing-function: ease-in-out; */
+
+  /* position: relative; */
+  /* animation-name: colour-changer; */
+  /* animation-duration: 4s; */
+  /* animation-iteration-count: infinite; */
+  /* animation-fill-mode: forwards; */
+}
+
+a:hover {
+  font-size: 20px;
+  /* width: 200px; */
+  /* height: 200px; */
+}
